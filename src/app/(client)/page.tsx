@@ -5,6 +5,7 @@ import { Post } from "../utils/interface";
 
 async function getPosts() {
   const query = `*[_type == "post"]{
+    mainImage,
     title,
     slug,
     publishedAt,

@@ -19,6 +19,7 @@ async function getPosts(slug: string) {
 }
 
 export const revalidate = 60;
+
 async function page({ params }: { params: { slug: string } }) {
   const post: Post = await getPosts(params.slug);
   console.log(post);
