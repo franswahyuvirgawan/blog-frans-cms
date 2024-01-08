@@ -6,6 +6,7 @@ import { urlForImage } from "../../../sanity/lib/image";
 interface Props {
   post: Post;
 }
+
 function PostComponent({ post }: Props) {
   return (
     <div className="mb-8  p-4 border border-gray-900 text-gray-300 rounded-md shadow-sm shadow-purple-950 hover:shadow-md hover:shadow-purple-500 hover:text-white">
